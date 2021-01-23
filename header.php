@@ -8,13 +8,8 @@
   <!-- viewportの指定 -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- GoogleFontsの読み込み（内容は適宜変更） -->
-
-
-  <!-- CSSの読み込み（slickは不要な場合もある） -->
-  <link rel="stylesheet" type="text/css" href="css/slick.css">
   <!-- jQueryの読み込み（不要な場合もある） -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
   <?php wp_head(); ?>
 </head>
 
