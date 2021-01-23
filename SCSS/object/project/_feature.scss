@@ -1,0 +1,12 @@
+.p-feature_intro {
+  @include breakpoint ( pc-wide ) {
+    width: 60%;
+  }
+}
+
+.p-feature_image {
+  @include breakpoint ( pc-wide ) {
+    width: 35%;
+    position: relative;
+  }
+}

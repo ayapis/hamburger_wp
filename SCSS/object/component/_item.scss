@@ -1,0 +1,18 @@
+// .l-itemにしそうになりましたが、
+// layoutレイヤーはページ単位で唯一の要素と定義されているため、componentにしました。
+
+.c-item {
+  // font-weight: 700;
+  a{
+    transition: .3s;
+  }
+}
+
+.c-item-footer {
+  font-size: 1.4rem;
+  a{
+    &:hover {
+      color: $color-hover-2;
+    }
+  }
+}

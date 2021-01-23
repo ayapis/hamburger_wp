@@ -1,0 +1,40 @@
+.p-menu {
+  img {
+    object-fit: cover;
+    width: 100%;
+    @include breakpoint ( ipad-pc ) {
+      width: 50%;
+    }
+  }
+}
+
+.p-menu__intro {
+  padding: 5rem 2rem;
+  @include breakpoint ( ipad ) {
+    padding: 2.4rem 3.5rem;
+  }
+  @include breakpoint ( pc ) {
+    padding: 5rem 3.5rem;
+  }
+  color: #fff;
+  background: $color-bg;
+  h3 {
+    font-size: 2rem;
+    @include breakpoint ( pc ) {
+      font-size: 3.6rem;
+    }
+  }
+  h4 {
+    line-height: 2.5;
+    @include breakpoint ( pc ) {
+      font-size: 2.4rem;
+      line-height: 2;
+    }
+  }
+  p {
+    width: 80%;
+    @include breakpoint ( ipad-pc ) {
+      width: 95%;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+// wrapのレイヤーは非常に迷ったが、「調整のための便利クラス」であるutillityが最適と判断しました。
+
+.c-wrap {
+  width: 90%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.c-wrap-flexbox {
+  @include breakpoint ( ipad ) {
+    display: flex;
+  }
+  @include breakpoint ( pc ) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.c-wrap-takeout {
+  background-image: url(../images/takeout.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include breakpoint ( ipad ) {
+    margin-right: 3%;
+  }
+  @include breakpoint ( pc ) {
+    margin-right: 3%;
+    max-width: 500px;
+  }
+}
+
+.c-wrap-eatin {
+  background-image: url(../images/eatin.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include breakpoint ( ipad ) {
+    margin-left: 3%;
+  }
+  @include breakpoint ( pc ) {
+    margin-left: 3%;
+    max-width: 500px;
+  }
+}
+
+.c-wrap-map {
+  position: relative;
+  width: 100%;
+  height: 850px;
+  overflow: hidden;
+  @include breakpoint ( ipad ) {
+    height: 500px;
+  }
+  @include breakpoint ( pc ) {
+    height: 700px;
+  }
+  iframe {
+    width: 100%;
+    height: 1400px;
+    margin-top: -170px;
+    z-index: 0;
+  }
+}
+
+// .c-wrap-service {
+//   @include breakpoint ( pc-wide ) {
+//     display: flex;
+//     justify-content: center;
+//     position: relative;
+//     z-index: 200;
+//   }
+// }
+
+// .c-wrap-news {
+//   border: 1px solid $color-border;
+// }
+
+// .c-wrap-feature {
+//   @include breakpoint ( pc-wide ) {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+//   &:nth-of-type(even) {
+//     @include breakpoint ( pc-wide ) {
+//       flex-direction: row-reverse;
+//     }
+//   }
+// }
+
+// .c-wrap-course {
+//   background: #fff;
+//   @include breakpoint ( pc-wide ) {
+//     display: flex;
+//     justify-content: space-between;
+//   }
+// }
+
+// .c-wrap-footer {
+//   display: flex;
+//   text-align: left;
+//   justify-content: space-between;
+//   padding: 13px 0px 35px;
+// }
+
+// .c-wrap-footer-sub {
+//   display: flex;
+//   flex-wrap: wrap;
+// }

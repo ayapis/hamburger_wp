@@ -1,0 +1,71 @@
+.u-pd-rl8px {
+  padding: 0px 8px;
+}
+
+.u-pd-rl10 {
+  padding: 0px 10px;
+}
+
+.u-pd-rl20 {
+  padding: 0px 20px;
+}
+
+.u-pd-t200 {
+  padding-top: 200px;
+}
+
+// アーカイブページで使用
+.u-pd-archiveMenu {
+  padding: 35px 45px;
+}
+
+.u-pd-b40 {
+  padding-bottom: 40px;
+}
+
+.u-pd-tb5 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.u-pd-tb64 {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.u-pd-tb25 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.u-pd-r18 {
+  padding-right: 18px;
+}
+
+.u-pd-l40 {
+  padding-left: 40px;
+}
+.u-pd40 {
+  padding: 40px;
+}
+
+
+.u-pd20 {
+  padding: 20px;
+}
+
+.u-pd10 {
+  padding: 10px;
+}
+
+// 縦横比の調整用
+.u-aspectRatio {
+  padding-top: 100%;
+}
+
+.u-pd-aside {
+  padding-top: 200px;
+  @include breakpoint ( pc ) {
+    padding-top: 60px;
+  }
+}

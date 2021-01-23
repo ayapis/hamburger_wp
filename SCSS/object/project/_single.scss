@@ -1,0 +1,178 @@
+.p-single {
+  color: $color-text;
+  blockquote, pre {
+    background: #F5F5F5;
+    padding: 30px 15px;
+    margin-bottom: 30px;
+    @include breakpoint ( ipad ) {
+      padding: 50px;
+      margin-bottom: 60px;
+    }
+    p {
+      margin-bottom: 30px;
+      @include breakpoint ( ipad ) {
+        margin-bottom: 60px;
+      }
+    }
+    cite {
+      font-style: normal;
+      a {
+        color: #4A6C9B;
+        text-decoration: underline;
+      }
+    }
+  }
+  pre {
+    padding: 50px;
+  }
+  img {
+    width: 100%;
+    margin-bottom: 30px;
+    @include breakpoint ( ipad ) {
+      margin-bottom: 60px;
+    }
+  }
+  table {
+    width: 100%;
+    margin-bottom: 30px;
+    @include breakpoint ( ipad ) {
+      margin-bottom: 60px;
+    }
+    td {
+      border: 1px solid #000;
+      height: 80px;
+      vertical-align: middle;
+      padding-left: 30px;
+      &:first-child {
+        width: 40%;
+      }
+    }
+  }
+  .c-button {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 30px;
+    @include breakpoint ( ipad ) {
+      width: 60%;
+      height: 100px;
+      margin-bottom: 60px;
+    }
+    @include breakpoint ( pc ) {
+      width: 40%;
+    }
+  }
+  .c-comment {
+    margin-bottom: 40px;
+    @extend .row;
+    -webkit-line-clamp: 7;
+    @include breakpoint ( ipad ) {
+      margin-bottom: 65px;
+      -webkit-line-clamp: 4;
+    }
+    @include breakpoint ( pc ) {
+      -webkit-line-clamp: 2;
+    }
+    &__bold {
+      margin-bottom: 70px;
+      @include breakpoint ( pc ) {
+        margin-bottom: 180px;
+      }
+    }
+  }
+  h3, h4, h5, h6 {
+    margin-bottom: 35px;
+    @include breakpoint ( ipad ) {
+      margin-bottom: 65px;
+    }
+  }
+}
+
+.p-single-intro {
+  display: flex;
+  justify-content: space-between;
+  &:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+  div {
+    width: 40%;
+    img {
+      // width: 40%;
+      // padding-bottom: 61%;
+      object-fit: cover;
+    }
+  }
+  p {
+    width: 50%;
+    margin-bottom: 30px;
+    @extend .row;
+    -webkit-line-clamp: 6;
+    @include breakpoint ( ipad ) {
+      margin-bottom: 120px;
+      -webkit-line-clamp: 14;
+    }
+    @include breakpoint ( pc ) {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+.p-single-imageList {
+  width: 100%;
+  img {
+    width: 100%;
+    margin-bottom: 20px;
+    @include breakpoint ( ipad ) {
+      width: 49%;
+    }
+    @include breakpoint ( pc ) {
+      width: 33%;
+    }
+  }
+  > img {
+    display: block;
+    width: 70%;
+    max-width: 580px;
+    margin: 0px auto 30px;
+    @include breakpoint ( ipad ) {
+      margin: 0px auto 60px;
+    }
+  }
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.p-single-list {
+  padding: 15px 0;
+  margin-bottom: 15px;
+  @include breakpoint ( ipad ) {
+    padding: 45px 0 45px 45px;
+  }
+  ol {
+    list-style-type: decimal;
+    list-style-position: inside;
+    // & + ol {
+    //   margin-top: 20px;
+    // }
+    ol {
+      margin-top: 20px;
+    }
+    & + ol {
+      margin-top: 20px;
+    }
+  }
+  ul {
+    ul {
+      margin-top: 20px;
+    }
+    & + ul {
+      margin-top: 20px;
+    }
+  }
+}
+
+.p-single-list-order {
+  margin-bottom: 60px;
+}

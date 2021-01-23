@@ -1,0 +1,80 @@
+.p-hero {
+  display: flex;
+  align-items: center;
+  background-image: url(..//images/mainvisu_sp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 285px;
+  @include breakpoint ( ipad ) {
+    background-image: url(..//images/mainvisu_ipad.png);
+  }
+  @include breakpoint ( pc ) {
+    background-image: url(..//images/mainvisu_pc.png);
+    height: 530px;
+  }
+}
+
+.p-hero-archive {
+  background-image: url(..//images/three-burgers-on-brown-wooden-tray-between-white-ceramic-1841108.png);
+  position: relative;
+  background-size: auto;
+  background-position: top -580px left -350px;
+  z-index: 10;
+  &::before {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    content: ' ';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+  }
+  @include breakpoint ( pc ) {
+    background-position: center center;
+    height: 240px;
+    background-size: cover;
+  }
+}
+
+.p-hero-single {
+  background-image: url(..//images/single.png);
+  height: 225px;
+  margin-bottom: 35px;
+  position: relative;
+  z-index: 10;
+  &::before {
+    background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    content: ' ';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+  }
+  @include breakpoint ( ipad ) {
+    background-image: url(..//images/single_ipad.png);
+    height: 500px;
+    margin-bottom: 65px;
+  }
+  @include breakpoint ( pc ) {
+    background-image: url(..//images/single_pc.png);
+  }
+}
+
+.p-hero-page {
+  background-image: url(..//images/page_iphone.png);
+  height: 225px;
+  margin-bottom: 35px;
+  @include breakpoint ( ipad ) {
+    background-image: url(..//images/page_ipad.png);
+    height: 500px;
+    margin-bottom: 65px;
+  }
+  @include breakpoint ( pc ) {
+    background-image: url(..//images/page.png);
+  }
+}
