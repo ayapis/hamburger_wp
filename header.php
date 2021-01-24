@@ -4,12 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="description" content="ハンバーガーショップのホームページです。">
-
   <!-- viewportの指定 -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <!-- jQueryの読み込み（不要な場合もある） -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
   <?php wp_head(); ?>
 </head>
 

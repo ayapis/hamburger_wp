@@ -13,6 +13,7 @@
 <script type="text/javascript" src="slick.min.js"></script>
 <!-- jQueryの読み込み（不要な場合は削除） -->
 <script src="hamburger.js"></script>
+<?php wp_footer(); ?>
 </body>
 
 </html>
