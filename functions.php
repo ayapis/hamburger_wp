@@ -15,3 +15,18 @@
       wp_enqueue_style( 'google-webfont-style', '//fonts.googleapis.com/css?family=Lato:wght@400;700&' );
     }
     add_action( 'wp_enqueue_scripts', 'hamburger_script' );
+
+    function wpbeg_widgets_init() {
+      register_sidebar (
+          array(
+              'name'          => 'メニュー一覧',
+              'id'            => 'menu_widget',
+              'description'   => 'ハンバーガーサイトのメニュー一覧です。',
+              'before_widget' => '<div id="%1$s" class="widget %2$s">',
+              'after_widget'  => '</div>',
+              'before_title'  => '<h2 class="l-aside__title"><button class="c-button-open">',
+              'after_title'   => "</button></h2>\n",
+          )
+      );
+  }
+  add_action( 'widgets_init', 'wpbeg_widgets_init' );
