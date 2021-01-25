@@ -43,3 +43,23 @@
     all: inherit;
   }
 }
+
+#categories-3 {
+  ul {
+    padding-left: 40px;
+    padding-top: 200px;
+    padding: 20rem 0 20rem 4rem;
+    @include breakpoint ( pc ) {
+      padding-top: 6rem;
+    }
+    > li {
+    font-size: 2.5rem;
+    }
+  }
+  ul.children {
+    padding: 4rem;
+    li {
+    font-size: initial;
+    }
+  }
+}

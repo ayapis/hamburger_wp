@@ -536,6 +536,30 @@ body {
   }
 }
 
+#categories-3 ul {
+  padding-left: 40px;
+  padding-top: 200px;
+  padding: 20rem 0 20rem 4rem;
+}
+
+@media (min-width: 769px) {
+  #categories-3 ul {
+    padding-top: 6rem;
+  }
+}
+
+#categories-3 ul > li {
+  font-size: 2.5rem;
+}
+
+#categories-3 ul.children {
+  padding: 4rem;
+}
+
+#categories-3 ul.children li {
+  font-size: initial;
+}
+
 .l-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -878,6 +902,15 @@ body {
 
 .c-link a {
   text-decoration: underline;
+}
+
+#categories-3 ul li.cat-item ul.children li a {
+  font-weight: normal;
+  background-image: none;
+}
+
+.c-title-aside {
+  font-size: 2.5rem;
 }
 
 .c-navi_toggle {
