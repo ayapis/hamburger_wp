@@ -47,9 +47,6 @@
 .c-title-box {
   font-size: 2.2rem;
 }
-.c-title-aside {
-  font-size: 2.5rem;
-}
 
 .c-title-map {
   font-size: 3.5rem;
@@ -65,7 +62,7 @@
   }
 }
 
-.c-title-menu {
+.c-title-archive {
   font-size: 2.8rem;
   @include breakpoint ( ipad ) {
     font-size: 3.6rem;
