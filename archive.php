@@ -33,6 +33,7 @@
     ?>
   </section>
   <section class="c-wrap">
+    <?php wp_pagenavi(); ?>
     <ul class="p-pagination">
       <li class="p-pagination__number">page 1/10</li>
       <li class="p-pagination__pre"><a href="#">&#8810;</a></li>
