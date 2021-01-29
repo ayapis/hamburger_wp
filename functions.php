@@ -46,6 +46,14 @@
     }
     add_filter( 'widget_categories_args', 'hook_widget_categories');
     add_filter( 'widget_categories_dropdown_args', 'hook_widget_categories' );
+
+  // 特定のカテゴリのみ非表示にする
+  function exclude_widget_categories($args){
+    $exclude = array(2,58,59);
+    $args["exclude"] = $exclude;
+    return $args;
+  }
+  add_filter( 'widget_categories_args', 'exclude_widget_categories');
     
 
   // エディターのカスタマイズしようとしたが、下記ではうまくいかず。

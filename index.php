@@ -9,7 +9,7 @@
   <div class="c-wrap-flexbox u-mb50">
     <!-- TakeOutとEatInを横並びにするためのdiv -->
     <section class="c-wrap-takeout">
-      <h3 class="c-title-takeout">Take Out</h3>
+      <h3 class="c-title-takeout"><a href="<?php echo esc_url( get_category_link( 59 ) ); ?>">Take Out</a></h3>
       <div class="p-box u-aspectRatio">
         <div class="p-box__content">
           <h4 class="c-title-box u-mb23">小見出しが入ります</h4>
@@ -22,7 +22,7 @@
       </div>
     </section>
     <section class="c-wrap-eatin">
-      <h3 class="c-title-eatin">Eat In</h3>
+      <h3 class="c-title-eatin"><a href="<?php echo esc_url( get_category_link( 58 ) ); ?>">Eat In</a></h3>
       <div class="p-box u-aspectRatio">
         <div class="p-box__content">
           <h4 class="c-title-box u-mb23">小見出しが入ります</h4>
