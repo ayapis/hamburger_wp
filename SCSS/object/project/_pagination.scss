@@ -107,6 +107,12 @@ li.p-pagination__next {
       }
     }
   }
+  &-none {
+    display: none;
+    @include breakpoint ( ipad ) {
+      display: block;
+    }
+  }
 }
 
 li.-current {

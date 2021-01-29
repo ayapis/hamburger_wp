@@ -87,14 +87,14 @@
         echo "<ol class=\"m-pagenation__body\">\n";
         // 変数iの初期値が1、ループごとに変数iは1増加、変数iが総ページ以下の間ループ=変数iが総ページより大きくなったら終わり
         for ($i=1; $i <= $pages; $i++){
-          // 総ページが1でないかつ、→ページネーション自体表示させないから分かる
-          // 変数iが現ページ+2+1より小さいまたは、→
-          // 変数iが現ページ-2-1より大きいまたは、
-          // 総ページが表示する項目数（2+1）より大きいとき
+          // 条件１ 総ページが1でないかつ、→ページネーション自体表示させないから分かる
+          // 条件２-ⅰ 「変数iが現ページ+2+1以上または、変数iが現ページ-2-1以下」でない
+          //           →変数iが現ページ+2+1以上でないかつ、変数iが現ページ-2-1以下でない
+          // 条件２-ⅱ 表示する項目数（2+1）が総ページより大きいとき
             if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems )){
                   // 現在のページの数字はリンク無し
+                  // 質問４： ($paged == $i)? の構文？が分からない。
                 echo ($paged == $i)? "<li class=\"-current\">".$i."</li>": 
-                    
                     "<li><a href='".get_pagenum_link($i)."'>".$i."</a></li>";
             }
         }
@@ -111,7 +111,11 @@
 
 
         // 「次へ」を表示
-        if($paged < $pages) echo "<li class=\"p-pagination__next\"><a href='".get_pagenum_link($paged + 1)."'>&#8811;</a></li>";
+        if($paged < $pages) {
+          echo "<li class=\"p-pagination__next\"><a href='".get_pagenum_link($paged + 1)."'>&#8811;</a></li>";
+        } else {
+          echo "<li class=\"p-pagination__next p-pagination__next-none\">&#8811;</li>";
+        }
         // echo "</div>\n";
         }
     }

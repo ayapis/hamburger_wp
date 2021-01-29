@@ -35,23 +35,9 @@
   <section class="c-wrap">
     <ul class="p-pagination">
       <?php
-if( function_exists('pagenation') ){ // 関数が定義されていたらtrueになる
-    pagenation();
-}?>
-    </ul>
-    <ul class="p-pagination">
-      <li class="p-pagination__number">page 1/10</li>
-      <li class="p-pagination__pre"><a href="#">&#8810;</a></li>
-      <li><a href="#" class="active">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-      <li><a href="#">5</a></li>
-      <li><a href="#">6</a></li>
-      <li><a href="#">7</a></li>
-      <li><a href="#">8</a></li>
-      <li><a href="#">9</a></li>
-      <li class="p-pagination__next"><a href="#">&#8811;</a></li>
+      if( function_exists('pagenation') ){ // 関数が定義されていたらtrueになる
+          pagenation();
+      }?>
     </ul>
   </section>
 </main>

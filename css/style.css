@@ -1612,6 +1612,16 @@ li.p-pagination__next a::before {
   }
 }
 
+li.p-pagination__next-none {
+  display: none;
+}
+
+@media (min-width: 376px) {
+  li.p-pagination__next-none {
+    display: block;
+  }
+}
+
 li.-current {
   background: #3C2B1C;
   color: #fff;
