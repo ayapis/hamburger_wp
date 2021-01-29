@@ -39,8 +39,79 @@
    }
   add_action( 'widgets_init', 'wpbeg_widgets_init' );
 
+  // エディターのカスタマイズしようとしたが、下記ではうまくいかず。
   function custom_editor_settings( $initArray ){
     $initArray['block_formats'] = "見出し3=h3; 見出し4=h4; 見出し5=h5; 段落=p; グループ=div; 整形済みテキスト=pre";
     return $initArray;
     }
     add_filter( 'tiny_mce_before_init', 'custom_editor_settings' );
+
+
+  // ページネーション
+  function pagenation($pages = '', $range = 2){
+    // 質問１：($range * 1) → ×１をする必要ある？
+    $showitems = ($range * 1)+1;
+    global $paged;
+    if(empty($paged)) $paged = 1;
+    if($pages == ''){
+        global $wp_query;
+        $pages = $wp_query->max_num_pages;
+        // 質問２：!は否定？ $pagesでないときって何？
+        if(!$pages){
+            $pages = 1;
+        }
+    }
+    // 質問３：質問２の箇所で$pagesに1が代入されたら、falseになるってこと？
+    if(1 != $pages){
+        // 画像を使う時用に、テーマのパスを取得（今回は使用しない）
+        // $img_pass = get_template_directory_uri();
+        // echo "<div class=\"m-pagenation\">";
+        
+        // 「1/2」表示 現在のページ数 / 総ページ数
+        echo "<li class=\"p-pagination__number\">". "page ".$paged."/". $pages."</li>";
+
+        // 現在のページ番号が1より大きいとき「<<前へ」をリンク付きで表示
+          // 「前へ」の文字は、スマホ版のときのみ表示なので、疑似要素として分ける
+        // それ以外のときはリンクなしで表示
+          // スマホ版では非表示にするために、「p-pagination__pre-none」クラスを追加
+        // リンク先は現在のページの1つ前なので「-1」とする
+        // if($paged > 1) echo "<li class=\"p-pagination__pre\"><a href='".get_pagenum_link($paged - 1)."'>&#8810;</a></li>";
+        if($paged > 1) {
+          echo "<li class=\"p-pagination__pre\"><a href='".get_pagenum_link($paged - 1)."'>&#8810;</a></li>";
+        } else {
+          echo "<li class=\"p-pagination__pre p-pagination__pre-none\">&#8810;</li>";
+        }
+        
+        // ページ番号を出力
+        // ここのクラスなくてもいい？
+        echo "<ol class=\"m-pagenation__body\">\n";
+        // 変数iの初期値が1、ループごとに変数iは1増加、変数iが総ページ以下の間ループ=変数iが総ページより大きくなったら終わり
+        for ($i=1; $i <= $pages; $i++){
+          // 総ページが1でないかつ、→ページネーション自体表示させないから分かる
+          // 変数iが現ページ+2+1より小さいまたは、→
+          // 変数iが現ページ-2-1より大きいまたは、
+          // 総ページが表示する項目数（2+1）より大きいとき
+            if (1 != $pages &&( !($i >= $paged+$range+1 || $i <= $paged-$range-1) || $pages <= $showitems )){
+                  // 現在のページの数字はリンク無し
+                echo ($paged == $i)? "<li class=\"-current\">".$i."</li>": 
+                    
+                    "<li><a href='".get_pagenum_link($i)."'>".$i."</a></li>";
+            }
+        }
+        // [...] 表示
+        // 現ページ+4ページが総ページよりも小さいとき
+        // すなわち、総ページ10ページのとき、 現ページ+4ページ > 10ページに該当するのは
+        // 現ページが 1,2,3,4,5ページ のときのみこの表示がされる
+        if(($paged + 4 ) < $pages){
+            echo "<li class=\"notNumbering\">...</li>";
+            // ・・・のあとに最後のページの番号（=総ページ数）を表示してる！
+            echo "<li><a href='".get_pagenum_link($pages)."'>".$pages."</a></li>";
+        }
+        echo "</ol>\n";
+
+
+        // 「次へ」を表示
+        if($paged < $pages) echo "<li class=\"p-pagination__next\"><a href='".get_pagenum_link($paged + 1)."'>&#8811;</a></li>";
+        // echo "</div>\n";
+        }
+    }

@@ -35,6 +35,7 @@
         background: $color-bg;
         color: #fff;
       }
+      // 後で消す
       &.active {
         background: $color-bg;
         color: #fff;
@@ -89,6 +90,12 @@ li.p-pagination__pre {
       }
     }
   }
+  &-none {
+    display: none;
+    @include breakpoint ( ipad ) {
+      display: block;
+    }
+  }
 }
 // 送り記号の「次へ」
 li.p-pagination__next {
@@ -100,4 +107,9 @@ li.p-pagination__next {
       }
     }
   }
+}
+
+li.-current {
+  background: $color-bg;
+  color: #fff;
 }

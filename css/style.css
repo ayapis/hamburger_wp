@@ -1592,6 +1592,16 @@ li.p-pagination__pre a::after {
   }
 }
 
+li.p-pagination__pre-none {
+  display: none;
+}
+
+@media (min-width: 376px) {
+  li.p-pagination__pre-none {
+    display: block;
+  }
+}
+
 li.p-pagination__next a::before {
   content: "次へ　";
 }
@@ -1600,6 +1610,11 @@ li.p-pagination__next a::before {
   li.p-pagination__next a::before {
     display: none;
   }
+}
+
+li.-current {
+  background: #3C2B1C;
+  color: #fff;
 }
 
 .p-pr {
