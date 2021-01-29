@@ -39,6 +39,15 @@
    }
   add_action( 'widgets_init', 'wpbeg_widgets_init' );
 
+  // 投稿件数が0件のカテゴリもサイドバーに表示させる
+  function hook_widget_categories( $args ){
+    $args['hide_empty'] = 0;
+    return $args;
+    }
+    add_filter( 'widget_categories_args', 'hook_widget_categories');
+    add_filter( 'widget_categories_dropdown_args', 'hook_widget_categories' );
+    
+
   // エディターのカスタマイズしようとしたが、下記ではうまくいかず。
   function custom_editor_settings( $initArray ){
     $initArray['block_formats'] = "見出し3=h3; 見出し4=h4; 見出し5=h5; 段落=p; グループ=div; 整形済みテキスト=pre";
