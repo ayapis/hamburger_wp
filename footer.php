@@ -4,7 +4,7 @@
       <a href="#" class="">ショップ情報</a>
       <a href="#" class="">ヒストリー</a>
     </div>
-    <small>Copyright: RaiseTech</small>
+    <small>&copy; <?php bloginfo( 'name' ); ?> 2021</small>
   </div>
 </footer>
 
