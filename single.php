@@ -22,7 +22,7 @@
   </article>
 
   <article class="p-post c-wrap">
-    <h2 class="c-title-single">見出しh2</h2>
+    <h2 class="c-title-post">見出しh2</h2>
     <p class="c-comment">
       Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
     </p>

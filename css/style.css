@@ -478,7 +478,7 @@ body {
   overflow-x: hidden;
 }
 
-.row, .p-box__content p, .p-map__comment, .p-post .c-comment, .p-post-intro p {
+.row, .p-box__content p, .p-map__comment, .p-post .c-comment, .p-post p, .p-post-intro p {
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
@@ -817,7 +817,7 @@ body {
           transform: rotate(-45deg);
 }
 
-.c-comment {
+.c-comment, .p-post p {
   line-height: 1.9;
 }
 
@@ -1045,13 +1045,13 @@ body {
   }
 }
 
-.c-title-single {
+.c-title-post, .p-post h2 {
   font-size: 2.8rem;
   margin-bottom: 35px;
 }
 
 @media (min-width: 376px) {
-  .c-title-single {
+  .c-title-post, .p-post h2 {
     font-size: 3.6rem;
     margin-bottom: 65px;
   }
@@ -1663,6 +1663,37 @@ li.-current {
   text-decoration: underline;
 }
 
+.p-post h3 {
+  font-size: 2.4rem;
+}
+
+.p-post h4 {
+  font-size: 2rem;
+}
+
+.p-post > ol {
+  list-style: decimal inside;
+  margin-bottom: 6rem;
+}
+
+.p-post > ol ol {
+  list-style: decimal inside;
+  margin-left: 2rem;
+}
+
+.p-post > ul {
+  list-style: disc inside;
+  margin-bottom: 6rem;
+}
+
+.p-post > ul ul {
+  margin-left: 2rem;
+}
+
+.p-post > ul ul li {
+  list-style: circle inside;
+}
+
 .p-post pre {
   padding: 50px;
 }
@@ -1720,20 +1751,20 @@ li.-current {
   }
 }
 
-.p-post .c-comment {
+.p-post .c-comment, .p-post p {
   margin-bottom: 40px;
   -webkit-line-clamp: 7;
 }
 
 @media (min-width: 376px) {
-  .p-post .c-comment {
+  .p-post .c-comment, .p-post p {
     margin-bottom: 65px;
     -webkit-line-clamp: 4;
   }
 }
 
 @media (min-width: 769px) {
-  .p-post .c-comment {
+  .p-post .c-comment, .p-post p {
     -webkit-line-clamp: 2;
   }
 }

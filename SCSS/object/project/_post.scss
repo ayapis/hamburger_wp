@@ -22,6 +22,36 @@
       }
     }
   }
+  h2 {
+    @extend .c-title-post;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  p {
+    @extend .c-comment;
+  }
+  > ol {
+    list-style: decimal inside;
+    margin-bottom: 6rem;
+    ol {
+      list-style: decimal inside;
+      margin-left: 2rem;
+    }
+  }
+  > ul {
+    list-style: disc inside;
+    margin-bottom: 6rem;
+    ul {
+      margin-left: 2rem;
+      li {
+        list-style: circle inside;
+      }
+    }
+  }
   pre {
     padding: 50px;
   }
