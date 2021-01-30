@@ -6,7 +6,7 @@
       <h1 class="c-title-hero">ショップについて</h1>
     </div>
   </section>
-  <article class="p-single c-wrap">
+  <article class="p-post c-wrap">
     <h2 class="c-title-single">見出しh2</h2>
     <p class="c-comment">
       Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。
@@ -24,7 +24,7 @@
       <cite>出典元：<a href="引用元URL">○○○○○○○○○○○○</a></cite>
     </blockquote>
     <img class="c-image__wide" src="./images/single_wide.png" alt="シングルページの横長のハンバーガー写真">
-    <div class="p-single-intro">
+    <div class="p-post-intro">
       <div>
         <img src="./images/single_normal.png" alt="シングルページのハンバーガー写真">
       </div>
@@ -33,7 +33,7 @@
         テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
         テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
     </div>
-    <div class="p-single-intro">
+    <div class="p-post-intro">
       <div>
         <img src="./images/single_normal.png" alt="シングルページのハンバーガー写真">
       </div>
@@ -42,7 +42,7 @@
         テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります
         テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
     </div>
-    <div class="p-single-imageList">
+    <div class="p-post-imageList">
       <img src="./images/single_normal.png" alt="シングルページのハンバーガー写真">
       <div>
         <img src="./images/single_normal.png" alt="シングルページのハンバーガー写真">
@@ -56,8 +56,8 @@
         <img src="./images/single_normal.png" alt="シングルページのハンバーガー写真">
       </div>
     </div>
-    <div class="p-single-list">
-      <div class="p-single-list-order">
+    <div class="p-post-list">
+      <div class="p-post-list-order">
         <ol>
           <li>リストリストリスト</li>
           <li>
@@ -73,7 +73,7 @@
           <li>リストリストリスト</li>
         </ol>
       </div>
-      <div class="p-single-list-unorder">
+      <div class="p-post-list-unorder">
         <ul>
           <li>リストリストリスト</li>
           <li>リストリストリスト

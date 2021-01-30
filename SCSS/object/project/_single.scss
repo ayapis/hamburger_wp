@@ -1,4 +1,4 @@
-.p-single {
+.p-post {
   color: $color-text;
   blockquote, pre {
     background: #F5F5F5;
@@ -87,7 +87,7 @@
   }
 }
 
-.p-single-intro {
+.p-post-intro {
   display: flex;
   justify-content: space-between;
   &:nth-child(even) {
@@ -116,7 +116,7 @@
   }
 }
 
-.p-single-imageList {
+.p-post-imageList {
   width: 100%;
   img {
     width: 100%;
@@ -144,7 +144,7 @@
   }
 }
 
-.p-single-list {
+.p-post-list {
   padding: 15px 0;
   margin-bottom: 15px;
   @include breakpoint ( ipad ) {
@@ -173,6 +173,6 @@
   }
 }
 
-.p-single-list-order {
+.p-post-list-order {
   margin-bottom: 60px;
 }
