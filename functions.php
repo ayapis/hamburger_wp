@@ -57,6 +57,7 @@
     
 
   // エディターのカスタマイズしようとしたが、下記ではうまくいかず。
+  // core/heading removeで検索してみる
   function custom_editor_settings( $initArray ){
     $initArray['block_formats'] = "見出し3=h3; 見出し4=h4; 見出し5=h5; 段落=p; グループ=div; 整形済みテキスト=pre";
     return $initArray;

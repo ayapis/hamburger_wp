@@ -22,8 +22,8 @@
     <div class="c-wrap-flexbox" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
       <?php the_post_thumbnail(); ?>
       <div class="p-menu__intro">
-        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-          <?php the_content( '詳しく見る' ); ?>
+        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+        <?php the_content( '詳しく見る' ); ?>
       </div>
     </div>
     <?php endwhile;
