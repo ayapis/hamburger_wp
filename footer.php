@@ -1,8 +1,8 @@
 <footer class="l-footer">
   <div class="l-footer-wrap">
     <div class="u-mb30">
-      <a href="#" class="">ショップ情報</a>
-      <a href="#" class="">ヒストリー</a>
+      <a href="<?php echo get_page_link( 5 ); ?>" class="">ショップ情報</a>
+      <a href="<?php echo get_page_link( 79 ); ?>" class="">ヒストリー</a>
     </div>
     <small>&copy; <?php bloginfo( 'name' ); ?> 2021</small>
   </div>
