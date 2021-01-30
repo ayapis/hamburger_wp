@@ -160,3 +160,7 @@
     }
     
     add_filter('the_content_more_link', 'remove_more_jump_link');
+
+    // 投稿ページの画像タグに埋め込まれるwidth/heightを削除
+    add_filter( 'wp_img_tag_add_width_and_height_attr', '__return_false' );
+ 
