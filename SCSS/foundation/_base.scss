@@ -2,12 +2,6 @@ html {
   // 16px(主要ブラウザのデフォルト値)×62.5%=10px
   // 参考URL(https://www.pc-koubou.jp/magazine/23912)
   font-size: 62.5%;
-  // @include breakpoint ( pc ) {
-  //   font-size: 106.25%;
-  // }
-  // @include breakpoint ( ipad ) {
-  //   font-size: 106.25%;
-  // }
 }
 
 body{
