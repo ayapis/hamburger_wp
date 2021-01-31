@@ -25,26 +25,28 @@
 
 .c-button-close {
   &.is-open {
+    width: 5rem;
+    height: 5rem;
     color: #F2EDE9;
     position: fixed;
-    top: 15px;
-    right: 25px;
+    top: 1.5rem;
+    right: 2.5rem;
     &::before,
     &::after {
       content   : "";
-      width     : 50px;
-      height    : 6px;
+      width     : 5rem;
+      height    : 0.6rem;
       background: $color-menu;
       position  : absolute;
-      left      : calc( 50% - (  50px / 2 ) );
+      left      : calc( 50% - (  5rem / 2 ) );
       display   : block;
     }
     &::before {
-      top: 25px;
+      top: 2.5rem;
       transform: rotate(45deg);
     }
     &::after {
-      top: 25px;
+      top: 2.5rem;
       transform: rotate(-45deg);
     }
   }

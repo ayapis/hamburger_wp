@@ -764,30 +764,32 @@ body {
 }
 
 .c-button-close.is-open {
+  width: 5rem;
+  height: 5rem;
   color: #F2EDE9;
   position: fixed;
-  top: 15px;
-  right: 25px;
+  top: 1.5rem;
+  right: 2.5rem;
 }
 
 .c-button-close.is-open::before, .c-button-close.is-open::after {
   content: "";
-  width: 50px;
-  height: 6px;
+  width: 5rem;
+  height: 0.6rem;
   background: #707070;
   position: absolute;
-  left: calc( 50% - (  50px / 2 ));
+  left: calc( 50% - (  5rem / 2 ));
   display: block;
 }
 
 .c-button-close.is-open::before {
-  top: 25px;
+  top: 2.5rem;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
 .c-button-close.is-open::after {
-  top: 25px;
+  top: 2.5rem;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
