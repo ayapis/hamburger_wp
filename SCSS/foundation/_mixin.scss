@@ -9,15 +9,4 @@
       @content ;
     }
   }
-  // // 使わなかったら消す
-  // @if $point == sp-ipad {
-  //   @media ( max-width: 768px ) {
-  //     @content ;
-  //   }
-  // }
-  // @if $point == ipad-pc {
-  //   @media ( min-width: 376px ) {
-  //     @content ;
-  //   }
-  // }
 }
