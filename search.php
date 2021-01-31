@@ -4,7 +4,7 @@
   <!-- メインタイトル部分 -->
   <section class="p-hero p-hero-archive u-mb35">
     <div class="c-wrap">
-      <h1 class="c-title-hero">Search:<span class="u-break u-ml20-ipadPc"><?php echo '“'.$_GET['s'] .'”' ?></span></h1>
+      <h1 class="c-title-hero">Search:<span class="u-break"><?php echo '“'.$_GET['s'] .'”' ?></span></h1>
     </div>
   </section>
   <!-- コンテンツ部分 -->

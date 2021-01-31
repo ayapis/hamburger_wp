@@ -4,7 +4,7 @@
   <!-- メインタイトル部分 -->
   <section class="p-hero p-hero-archive u-mb35">
     <div class="c-wrap">
-      <h1 class="c-title-hero">Menu:<span class="u-break u-ml20-ipadPc">
+      <h1 class="c-title-hero">Menu:<span class="u-break">
           <?php single_cat_title(); ?></span></h1>
     </div>
   </section>
