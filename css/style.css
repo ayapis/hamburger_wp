@@ -1016,30 +1016,6 @@ body {
   -webkit-line-clamp: 3;
 }
 
-.p-course {
-  width: 100vw;
-  background: -webkit-gradient(linear, left top, right top, from(#f3fafb), to(#e9f8fb));
-  background: linear-gradient(to right, #f3fafb 0%, #e9f8fb 100%);
-}
-
-.p-course_intro_list {
-  padding-left: 40px;
-}
-
-.p-course_intro_item {
-  position: relative;
-}
-
-.p-course_intro_item::before {
-  position: absolute;
-  top: .2em;
-  left: -20px;
-  content: "\f14a";
-  font-weight: 400;
-  font-family: "Font Awesome 5 Free";
-  color: #2498B3;
-}
-
 .p-hero {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1303,19 +1279,6 @@ body {
 .p-menu__intro p {
   width: 80%;
   margin-bottom: 4rem;
-}
-
-.p-news {
-  width: 100%;
-}
-
-.p-news_item {
-  border-bottom: 1px dotted #C3C3C3;
-  padding: 15px 0px;
-}
-
-.p-news_item:last-of-type {
-  border-bottom: none;
 }
 
 .p-pagination {
@@ -1676,27 +1639,6 @@ li.-current {
   .wp-block-buttons .wp-block-button {
     margin-bottom: 6rem;
   }
-}
-
-.p-pr {
-  width: 100vw;
-  background: #D5F0F8;
-}
-
-.p-service {
-  width: 100%;
-  color: #fff;
-  background: #000;
-  padding: 64px 0px;
-  text-align: center;
-}
-
-.p-service_box {
-  margin-bottom: 40px;
-}
-
-.p-service_box:last-of-type {
-  margin-bottom: 0;
 }
 
 .p-top {
