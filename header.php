@@ -6,10 +6,12 @@
   <meta name="description" content="ハンバーガーショップのホームページです。">
   <!-- viewportの指定 -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
   <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class(); ?>>
+  <?php wp_body_open(); ?>
   <div class="l-content">
     <div class="l-content__main">
       <header class="l-header">

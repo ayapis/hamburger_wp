@@ -2,6 +2,7 @@
     //テーマサポート
     add_theme_support( 'title-tag' );
     add_theme_support( 'post-thumbnails' );
+    add_theme_support( 'automatic-feed-links' );
 
     // サイトタイトルの取得
     function hamburger_title( $title ) {
@@ -163,4 +164,9 @@
 
     // 投稿ページの画像タグに埋め込まれるwidth/heightを削除
     add_filter( 'wp_img_tag_add_width_and_height_attr', '__return_false' );
+
+    // テーマチェック：コンテンツの幅が定義されていません。
+    if ( ! isset( $content_width ) ) {
+      $content_width = 960;
+    }
  
