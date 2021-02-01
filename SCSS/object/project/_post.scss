@@ -1,0 +1,155 @@
+.p-post {
+  color: $color-text;
+  padding-bottom: 10rem;
+  blockquote, pre {
+    background: #F5F5F5;
+    padding: 30px 15px;
+    @include breakpoint ( ipad ) {
+      padding: 50px;
+    }
+    p {
+      margin-bottom: 30px;
+      @include breakpoint ( ipad ) {
+        margin-bottom: 60px;
+      }
+    }
+    cite {
+      font-style: normal;
+      a {
+        color: #4A6C9B;
+        text-decoration: underline;
+      }
+    }
+  }
+  h2 {
+    @extend .c-title-post;
+  }
+  h3 {
+    font-size: 2.4rem;
+  }
+  h4 {
+    font-size: 2rem;
+  }
+  p {
+    @extend .c-comment;
+  }
+  > ol {
+    list-style: decimal inside;
+    margin-bottom: 3rem;
+    @include breakpoint ( ipad ) {
+      margin-bottom: 6rem;
+    }
+    ol {
+      list-style: decimal inside;
+      margin-left: 2rem;
+    }
+  }
+  > ul {
+    list-style: disc inside;
+    margin-bottom: 3rem;
+    @include breakpoint ( ipad ) {
+      margin-bottom: 6rem;
+    }
+    ul {
+      margin-left: 2rem;
+      li {
+        list-style: circle inside;
+      }
+    }
+  }
+  pre {
+    padding: 50px;
+  }
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+  table {
+    width: 100%;
+    td {
+      border: 1px solid #000;
+      height: 80px;
+      vertical-align: middle;
+      padding-left: 30px;
+      &:first-child {
+        width: 40%;
+      }
+    }
+  }
+  .c-comment {
+    margin-bottom: 40px;
+    @extend .row;
+    -webkit-line-clamp: 7;
+    @include breakpoint ( ipad ) {
+      margin-bottom: 65px;
+      -webkit-line-clamp: 4;
+    }
+    @include breakpoint ( pc ) {
+      -webkit-line-clamp: 2;
+    }
+    &__bold {
+      margin-bottom: 70px;
+      @include breakpoint ( pc ) {
+        margin-bottom: 180px;
+      }
+    }
+  }
+  h3, h4, h5, h6 {
+    margin-bottom: 35px;
+    @include breakpoint ( ipad ) {
+      margin-bottom: 65px;
+    }
+  }
+}
+
+.wp-block- {
+  &quote {
+    margin-bottom: 3rem;
+    @include breakpoint ( ipad ) {
+      margin-bottom: 6rem;
+    }
+  }
+  &media-text {
+    margin-bottom: 3rem;
+    @include breakpoint ( ipad ) {
+      margin-bottom: 6rem;
+    }
+  }
+  &image {
+    margin-bottom: 3rem;
+    @include breakpoint ( ipad ) {
+      margin-bottom: 6rem;
+    }
+  }
+  &code {
+    margin-bottom: 3rem;
+    @include breakpoint ( ipad ) {
+      margin-bottom: 6rem;
+    }
+  }
+  &table {
+    margin-bottom: 3rem;
+    @include breakpoint ( ipad ) {
+      margin-bottom: 6rem;
+    }
+  }
+  &buttons {
+    .wp-block-button {
+      width: 100%;
+      @include breakpoint ( ipad ) {
+        width: 60%;
+      }
+      @include breakpoint ( pc ) {
+        width: 40%;
+      }
+      height: 10rem;
+      margin-bottom: 3rem;
+      @include breakpoint ( ipad ) {
+        margin-bottom: 6rem;
+      }
+    }
+  }
+  &button__link {
+    @extend .c-button;
+  }
+}

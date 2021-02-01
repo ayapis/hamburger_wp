@@ -1,0 +1,33 @@
+// 最初は.c-topとしていたが、この中に.c-buttonというクラスがあり、
+// 最小単位であるはずのコンポーネントの中にコンポーネントができてしまうため、
+// .p-topに変更
+.p-top {
+  width: 100%;
+  // height: 150px;
+  padding: 23px 0px 13px;
+  text-align: center;
+  background: #fff;
+  @include breakpoint ( pc-wide ) {
+    width: auto;
+    max-width: 530px;
+    padding: 43px 40px 19px;
+    border-radius: 10px;
+  }
+}
+
+.p-top__logo {
+  width: 280px;
+  margin: auto;
+}
+
+.p-top__comment {
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  @include breakpoint ( pc-wide ) {
+    font-size: 1.6rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+}

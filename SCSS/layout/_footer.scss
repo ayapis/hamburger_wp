@@ -1,0 +1,36 @@
+// ページ単位で唯一の要素かを判断基準に設定
+// クラスではなく、idにしても支障がないか
+// 具体的には、index.htmlでクラス名を検索したときに検索結果が1つになることが条件
+
+.l-footer {
+  height: 150px;
+  background-image: url(../images/footer.png);
+  color: #fff;
+}
+
+.l-footer-wrap {
+  width: 235px;
+  height: 100%;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  div {
+    display: flex;
+    justify-content: space-around;
+  }
+  // 区切り線を隣接セレクタで実装
+  a + a {
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 6px;
+      left: -15px;
+      width: 2px;
+      height: 13px;
+      background: #fff;
+    }
+  }
+}

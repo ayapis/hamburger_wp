@@ -1,0 +1,15 @@
+html {
+  // 16px(主要ブラウザのデフォルト値)×62.5%=10px
+  // 参考URL(https://www.pc-koubou.jp/magazine/23912)
+  font-size: 62.5%;
+}
+
+body{
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height:1.6;
+  font-family: 'Lato', sans-serif;
+  // 非表示中横スクロールバーが出ないように 
+  overflow-x: hidden;
+
+}

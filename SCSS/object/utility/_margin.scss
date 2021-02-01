@@ -1,0 +1,24 @@
+.u-mb23 {
+  margin-bottom: 23px;
+}
+
+.u-mb30 {
+  margin-bottom: 30px;
+}
+.u-mb35 {
+  margin-bottom: 35px;
+}
+
+.u-mb50 {
+  margin-bottom: 50px;
+}
+
+.u-mb-menu {
+  margin-bottom: 20px;
+  @include breakpoint ( ipad ) {
+    margin-bottom: 40px;
+  }
+  @include breakpoint ( pc ) {
+    margin-bottom: 60px;
+  }
+}
