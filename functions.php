@@ -33,8 +33,8 @@
               'description'   => 'ハンバーガーサイトのメニュー一覧です。',
               'before_widget' => '<div id="%1$s" class="widget %2$s">',
               'after_widget'  => '</div>',
-              'before_title'  => '<h2 class="l-aside__title"><button class="c-button-open">',
-              'after_title'   => "</button></h2>\n",
+              'before_title'  => '<h2 class="c-title-menu">',
+              'after_title'   => "</h2>\n",
           )
       );
     }

@@ -30,20 +30,6 @@
   }
 }
 
-.l-aside__title {
-  width: 100vw;
-  height: 80px;
-  background: $color-base;
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  text-align: right;
-  padding: 20px;
-  @include breakpoint ( pc ) {
-    all: inherit;
-  }
-}
-
 // サイドバーのレイアウト
 #categories-3 {
   ul {

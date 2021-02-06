@@ -54,7 +54,7 @@
     line-height: 1.5;
     text-align: left;
     @include breakpoint ( pc ) {
-      margin-top: 20px;
+      margin-header: 20px;
       margin-bottom: 20px;
       margin-right: 10px;
     }
@@ -67,7 +67,7 @@
     border-radius: 5px;
     background: transparent linear-gradient(180deg, #F2EDE9 0%, #DED8D3 100%);
     @include breakpoint ( pc ) {
-      margin-top: 20px;
+      margin-header: 20px;
       margin-bottom: 20px;
       width: 8rem;
     }
